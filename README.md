@@ -19,6 +19,7 @@ Igrači ne mogu pucati na isto polje vise puta.
 U PvAI modu AI puca na nasumičan način.
 
 Nakon što su svi brodovi jednog igrača potopljeni, igra završava i ispisuje se:
+
 GAME OVER
 Winner: <Igrac#>
 
