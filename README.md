@@ -23,3 +23,6 @@ Nakon što su svi brodovi jednog igrača potopljeni, igra završava i ispisuje s
 GAME OVER
 Winner: <Igrac#>
 
+## Pokretanje igre za Windows 
+Preuzmite ZIP arhivu s GitHub repozitorija i raspakirajte je na željenu lokaciju. U njoj ćete pokrenuti datoteku: Projekt-Battleship.exe.
+-NAPOMENA: U istom direktoriju se mora nalaziti raylib direktorij koji sadrži "raylib.dill" datoteku(U raylib\raylib-5.5_win64_msvc16\lib). Ako se .exe datoteka ne nalazi u istom folderu kao i "raylib.dill", program se neće pokrenuti.
