@@ -26,3 +26,25 @@ Winner: <Igrac#>
 ## Pokretanje igre za Windows 
 Preuzmite ZIP arhivu s GitHub repozitorija i raspakirajte je na željenu lokaciju. U njoj ćete pokrenuti datoteku: Projekt-Battleship.exe.
 -NAPOMENA: U istom direktoriju se mora nalaziti raylib direktorij koji sadrži "raylib.dill" datoteku(U raylib\raylib-5.5_win64_msvc16\lib). Ako se .exe datoteka ne nalazi u istom folderu kao i "raylib.dill", program se neće pokrenuti.
+
+## Pokretanje na Linuxu
+Preuzmite ZIP arhivu s GitHub repozitorija i raspakirajte je. U njoj ćete vidjeti .cpp i .h datoteke te preuzmite datotkeu CMakeFiles.txt.
+
+Preduvjeti:
+U terminalu trebate instalirati potrebne alate i biblioteke:
+```bash
+sudo apt update
+sudo apt install -y build-essential cmake git \
+  libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev \
+  libgl1-mesa-dev libasound2-dev
+```
+
+Build i pokretanje
+1. Raspakirajte ZIP(project-files)
+2. Otvorite terminal u direktoriju gdje se nalazi CMakeLists.txt
+3. Pokrenite sljedeće naredbe:
+```bash
+cmake -S . -B build
+cmake --build build -j$(nproc)
+./build/Projekt-Battleship
+```
